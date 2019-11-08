@@ -62,5 +62,6 @@ fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
 echo "ro.lineage.device=$LINEAGE_DEVICE"
-
+echo "lineage.updater.uri=http://192.168.10.106/LineageOTA/builds/full/"
+echo "setprop service.adb.tcp.port 6666"
 echo "# end build properties"

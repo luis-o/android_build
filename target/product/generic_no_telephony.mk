@@ -24,7 +24,6 @@ PRODUCT_PACKAGES := \
     Gallery2 \
     Music \
     MusicFX \
-    OneTimeInitializer \
     Provision \
     SystemUI \
     SysuiDarkThemeOverlay \
