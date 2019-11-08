@@ -62,5 +62,10 @@ fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
 echo "ro.lineage.device=$LINEAGE_DEVICE"
-
+echo "ro.lineage.build.version=0.1"
+echo "lineage.updater.uri=http://192.168.10.106/api/v1/gtaxllte/stable"
+echo "lineage.updater.allow_downgrading=1"
+echo "service.adb.tcp.port 6666"
+echo "ro.secure=0"
+echo "ro.debuggable=1"
 echo "# end build properties"
