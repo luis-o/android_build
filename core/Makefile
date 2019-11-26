@@ -3208,6 +3208,10 @@ endif
 $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 		build/make/tools/releasetools/ota_from_target_files
 	@echo "Package OTA: $@"
+	@echo ""
+	@echo "TARGET_FILES_PACKAGE: $(BUILT_TARGET_FILES_PACKAGE)"
+	@echo "HOST OUT: $(HOST_OUT)"
+	@echo "OEM_OTA_CONFIG: $(OEM_OTA_CONFIG)"
 	$(hide) PATH=$(foreach p,$(INTERNAL_USERIMAGES_BINARY_PATHS),$(p):)$$PATH MKBOOTIMG=$(MKBOOTIMG) \
 	   build/make/tools/releasetools/ota_from_target_files -v \
 	   --block \
