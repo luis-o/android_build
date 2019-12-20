@@ -46,7 +46,7 @@ endif
 
 # Some qcom binaries use this weird -isystem include...
 ifneq (,$(findstring $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include,$(LOCAL_CFLAGS)))
-  LOCAL_CFLAGS := -w $(patsubst -isystem $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include,,$(LOCAL_CFLAGS))
+  LOCAL_CFLAGS := --werror_overriding_commands -w $(patsubst -isystem $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include,,$(LOCAL_CFLAGS))
   LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 endif
 

@@ -81,3 +81,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/sdk_arm64.mk \
     $(LOCAL_DIR)/sdk_x86_64.mk
 endif
+
+PRODUCT_MAKEFILES += $(LOCAL_DIR)/phoenix.mk
